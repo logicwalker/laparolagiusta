@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<xFaster xmlns="http://www.xfaster.com/schema/xf/om/webpart/xf.om.webpart.list.viewstate.xsd">
+  <parametri>
+    <num_pagina>1</num_pagina>
+    <num_elementi>100</num_elementi>
+    <totale_pagine>1</totale_pagine>
+  </parametri>
+ 
+  <dati>
+    <id>D7CD95E8-19F5-4237-9925-2E03032E6F0A</id>
+    <PlaceHolder>ContentCanvas_item2</PlaceHolder>
+    <webPart>GIOCO</webPart>
+    <descrizione />
+    <page>netretis.gioco</page>
+    <transform />
+    <posizione />
+    <dataCreazione />
+    <dataUltimaModifica />
+  </dati>
+  <dati>
+    <id>D7CD95E8-19F5-4237-9925-2E03032E6F0A</id>
+    <PlaceHolder>ContentCanvas_item4</PlaceHolder>
+    <webPart>INVIAMAIL</webPart>
+    <descrizione />
+    <page>netretis.inviaemail</page>
+    <transform />
+    <posizione />
+    <dataCreazione />
+    <dataUltimaModifica />
+  </dati>
+
+
+
+
+</xFaster>

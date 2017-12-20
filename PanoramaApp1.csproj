@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{103B0D7D-458D-4E4C-912D-E065EA176264}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PanoramaApp1</RootNamespace>
+    <AssemblyName>PanoramaApp1</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PanoramaApp1_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PanoramaApp1.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <DefaultLanguage>it-IT</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\gioco.xaml.cs">
+      <DependentUpon>gioco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\inviaemail.xaml.cs">
+      <DependentUpon>inviaemail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\presentazione.xaml.cs">
+      <DependentUpon>presentazione.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="core\inputMessage.cs" />
+    <Compile Include="core\MD5.cs" />
+    <Compile Include="core\MD5Managed.cs" />
+    <Compile Include="core\SaveLoadLocal.cs" />
+    <Compile Include="core\viewState.cs" />
+    <Compile Include="core\webpart.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopupSplash.xaml.cs">
+      <DependentUpon>PopupSplash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\inputMessages.Designer.cs" />
+    <Compile Include="Resources\inputMessages1.Designer.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Components\images\home0.png" />
+    <Content Include="Components\images\home1.png" />
+    <Content Include="Components\images\home2.png" />
+    <Content Include="Components\images\home3.png" />
+    <Content Include="Components\images\home4.png" />
+    <Content Include="Components\images\home5.png" />
+    <Content Include="Components\images\home6.png" />
+    <Content Include="Components\images\home7.png" />
+    <Content Include="Components\images\spiegazione.jpg" />
+    <Content Include="Components\TextFile1.txt" />
+    <Content Include="dati\1.xml" />
+    <Content Include="dati\10.xml" />
+    <Content Include="dati\100.xml" />
+    <Content Include="dati\101.xml" />
+    <Content Include="dati\102.xml" />
+    <Content Include="dati\103.xml" />
+    <Content Include="dati\104.xml" />
+    <Content Include="dati\105.xml" />
+    <Content Include="dati\11.xml" />
+    <Content Include="dati\12.xml" />
+    <Content Include="dati\13.xml" />
+    <Content Include="dati\14.xml" />
+    <Content Include="dati\15.xml" />
+    <Content Include="dati\16.xml" />
+    <Content Include="dati\17.xml" />
+    <Content Include="dati\18.xml" />
+    <Content Include="dati\19.xml" />
+    <Content Include="dati\2.xml" />
+    <Content Include="dati\20.xml" />
+    <Content Include="dati\21.xml" />
+    <Content Include="dati\22.xml" />
+    <Content Include="dati\23.xml" />
+    <Content Include="dati\24.xml" />
+    <Content Include="dati\25.xml" />
+    <Content Include="dati\26.xml" />
+    <Content Include="dati\27.xml" />
+    <Content Include="dati\28.xml" />
+    <Content Include="dati\29.xml" />
+    <Content Include="dati\3.xml" />
+    <Content Include="dati\30.xml" />
+    <Content Include="dati\31.xml" />
+    <Content Include="dati\32.xml" />
+    <Content Include="dati\33.xml" />
+    <Content Include="dati\34.xml" />
+    <Content Include="dati\35.xml" />
+    <Content Include="dati\36.xml" />
+    <Content Include="dati\37.xml" />
+    <Content Include="dati\38.xml" />
+    <Content Include="dati\39.xml" />
+    <Content Include="dati\4.xml" />
+    <Content Include="dati\40.xml" />
+    <Content Include="dati\41.xml" />
+    <Content Include="dati\42.xml" />
+    <Content Include="dati\43.xml" />
+    <Content Include="dati\44.xml" />
+    <Content Include="dati\45.xml" />
+    <Content Include="dati\46.xml" />
+    <Content Include="dati\47.xml" />
+    <Content Include="dati\48.xml" />
+    <Content Include="dati\49.xml" />
+    <Content Include="dati\5.xml" />
+    <Content Include="dati\50.xml" />
+    <Content Include="dati\51.xml" />
+    <Content Include="dati\52.xml" />
+    <Content Include="dati\53.xml" />
+    <Content Include="dati\54.xml" />
+    <Content Include="dati\55.xml" />
+    <Content Include="dati\56.xml" />
+    <Content Include="dati\57.xml" />
+    <Content Include="dati\58.xml" />
+    <Content Include="dati\59.xml" />
+    <Content Include="dati\6.xml" />
+    <Content Include="dati\60.xml" />
+    <Content Include="dati\61.xml" />
+    <Content Include="dati\62.xml" />
+    <Content Include="dati\63.xml" />
+    <Content Include="dati\64.xml" />
+    <Content Include="dati\65.xml" />
+    <Content Include="dati\66.xml" />
+    <Content Include="dati\67.xml" />
+    <Content Include="dati\68.xml" />
+    <Content Include="dati\69.xml" />
+    <Content Include="dati\7.xml" />
+    <Content Include="dati\70.xml" />
+    <Content Include="dati\71.xml" />
+    <Content Include="dati\72.xml" />
+    <Content Include="dati\73.xml" />
+    <Content Include="dati\74.xml" />
+    <Content Include="dati\75.xml" />
+    <Content Include="dati\76.xml" />
+    <Content Include="dati\77.xml" />
+    <Content Include="dati\78.xml" />
+    <Content Include="dati\79.xml" />
+    <Content Include="dati\8.xml" />
+    <Content Include="dati\80.xml" />
+    <Content Include="dati\81.xml" />
+    <Content Include="dati\82.xml" />
+    <Content Include="dati\83.xml" />
+    <Content Include="dati\84.xml" />
+    <Content Include="dati\85.xml" />
+    <Content Include="dati\86.xml" />
+    <Content Include="dati\87.xml" />
+    <Content Include="dati\88.xml" />
+    <Content Include="dati\89.xml" />
+    <Content Include="dati\9.xml" />
+    <Content Include="dati\90.xml" />
+    <Content Include="dati\91.xml" />
+    <Content Include="dati\92.xml" />
+    <Content Include="dati\93.xml" />
+    <Content Include="dati\94.xml" />
+    <Content Include="dati\95.xml" />
+    <Content Include="dati\96.xml" />
+    <Content Include="dati\97.xml" />
+    <Content Include="dati\98.xml" />
+    <Content Include="dati\99.xml" />
+    <Content Include="html\tab1.html" />
+    <Content Include="html\tab2.html" />
+    <Content Include="images\aerea.png" />
+    <Content Include="images\appbar_back.png" />
+    <Content Include="images\appbar_edit.png" />
+    <Content Include="images\appbar_next.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\settings.png" />
+    <Content Include="images\strade.png" />
+    <Content Include="images\zoommeno.png" />
+    <Content Include="images\zoompiu.png" />
+    <Resource Include="Assets\PanoramaBackground.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\BadgeLogo.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\SquareTile150x150.png" />
+    <Content Include="Assets\SquareTile71x71.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\inputMessages.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Components\gioco.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Components\inviaemail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Components\presentazione.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PopupSplash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

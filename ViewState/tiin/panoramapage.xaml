@@ -1,0 +1,121 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="netretis.panoramapage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" BackKeyPress="PhoneApplicationPage_BackKeyPress" Loaded="PhoneApplicationPage_Loaded" GotFocus="PhoneApplicationPage_GotFocus">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid>
+        <controls:Pivot Title=" " Foreground="#FF1B639B" >
+            <!--Assigns a background image to the Panorama control-->
+            <controls:Pivot.Background>
+                <ImageBrush ImageSource="/netretis;component/ViewState/tiin/images/sfondo480Simple.jpg"/>
+            </controls:Pivot.Background>
+            <!--Panorama item one-->
+            <controls:PivotItem Foreground="#FF153E7C" >
+
+                <controls:PivotItem.Header>
+                    <Grid >
+                        <!--<Image Source="/ApplicationIcon.png" Height="100" Width="100"/>-->
+                        <TextBlock  FontFamily="Segoe WP" Text="{Binding Path=Localizedresources.findcar_tab1, Source={StaticResource LocalizedStrings}}" FontStyle="Italic" FontSize="45" VerticalAlignment="Center" Margin="0,51,0,-61" />
+                        
+                    </Grid>
+                </controls:PivotItem.Header>
+
+             
+                    <!--ContentPanel - place additional content here-->
+                    <Grid  Height="590">
+
+
+<phone:WebBrowser Name="tab1" Foreground="Black" />
+
+
+
+                    </Grid>
+             
+            </controls:PivotItem>
+
+            <!--Panorama item two-->
+            <controls:PivotItem Foreground="#FF153E7C">
+                <controls:PivotItem.Header>
+                    <Grid >
+                        <!--<Image Source="/ApplicationIcon.png" Height="100" Width="100"/>-->
+                        <TextBlock FontFamily="Segoe WP" Text="{Binding Path=Localizedresources.findcar_tab2, Source={StaticResource LocalizedStrings}}" FontStyle="Italic" FontSize="45" VerticalAlignment="Center" Margin="0,51,0,-61" />
+                    </Grid>
+                </controls:PivotItem.Header>
+
+                <StackPanel x:Name="ContentCanvas_item2"  Height="590">
+
+
+                </StackPanel>
+            </controls:PivotItem>
+            
+            <!--Panorama item two-->
+            <controls:PivotItem  Foreground="#FF153E7C">
+
+                <controls:PivotItem.Header>
+                    <Grid >
+                        <!--<Image Source="/ApplicationIcon.png" Height="100" Width="100"/>-->
+                        <TextBlock FontFamily="Segoe WP" Text="{Binding Path=Localizedresources.findcar_tab3, Source={StaticResource LocalizedStrings}}" FontStyle="Italic" FontSize="45" VerticalAlignment="Center" Margin="0,51,0,-61" />
+                    </Grid>
+                </controls:PivotItem.Header>
+
+                <Grid  Height="590">
+
+
+                    <phone:WebBrowser Name="tab2" Foreground="Black" Loaded="tab2_Loaded" />
+
+
+
+                </Grid>
+            </controls:PivotItem>
+
+
+            <!--Panorama item two-->
+            <controls:PivotItem  Foreground="#FF153E7C">
+
+                <controls:PivotItem.Header>
+                    <Grid >
+                        <!--<Image Source="/ApplicationIcon.png" Height="100" Width="100"/>-->
+                        <TextBlock FontFamily="Segoe WP" Text="{Binding Path=Localizedresources.findcar_tab4, Source={StaticResource LocalizedStrings}}" FontStyle="Italic" FontSize="45" VerticalAlignment="Center" Margin="0,51,0,-61" />
+                    </Grid>
+                </controls:PivotItem.Header>
+
+                <StackPanel x:Name="ContentCanvas_item4"  Height="590">
+
+
+                </StackPanel>
+            </controls:PivotItem>
+
+            <!--Panorama item two-->
+            <controls:PivotItem  Foreground="#FF153E7C">
+                <controls:PivotItem.Header>
+                    <Grid >
+                        <!--<Image Source="/ApplicationIcon.png" Height="100" Width="100"/>-->
+                        <TextBlock FontFamily="Segoe WP" Text="{Binding Path=Localizedresources.findcar_tab5, Source={StaticResource LocalizedStrings}}" FontStyle="Italic" FontSize="45" VerticalAlignment="Center" Margin="0,51,0,-61" />
+                    </Grid>
+                </controls:PivotItem.Header>
+                <Grid  Height="590">
+                    <Image Source="/netretis;component/ViewState/tiin/images/credit.jpg" Height="487" Width="377" />
+                    <HyperlinkButton Content="information@netretis.com" Height="30" HorizontalAlignment="Right" Margin="0,57,32,0" VerticalAlignment="Top" Width="370" Foreground="Black" FontSize="30" Click="HyperlinkButton_Click" />
+                    <TextBlock Foreground="Black" Height="43" HorizontalAlignment="Left" Margin="10,10,0,0" Name="textBlock2" Text="{Binding Path=Localizedresources.findcar_tab5_informazioni, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" FontSize="30" />
+                </Grid>
+            </controls:PivotItem>
+
+            </controls:Pivot>
+    </Grid>
+
+
+
+
+</phone:PhoneApplicationPage>

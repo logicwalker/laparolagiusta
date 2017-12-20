@@ -1,0 +1,11 @@
+﻿ <dati>
+    <id>D7CD95E8-19F5-4237-9925-2E03032E6F0A</id>
+    <PlaceHolder>ContentCanvas_item1</PlaceHolder>
+    <webPart>PRESENTAZIONE</webPart>
+    <descrizione />
+    <page>netretis.presentazione</page>
+    <transform />
+    <posizione />
+    <dataCreazione />
+    <dataUltimaModifica />
+  </dati>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<xFaster xmlns="http://www.xfaster.com/schema/xf/om/viewstate/xf.om.viewstate.element.viewstate.xsd">
+  <parametri>
+    <viewstate>ANNOUNCE_FINDCAR</viewstate>
+    <applicazione>SocialWP</applicazione>
+  </parametri>
+  <dati>
+    <id>42A34319-F7B3-45FB-8E69-8998464D728E</id>
+    <applicazione>SocialWP</applicazione>
+    <nome>Cerca la tua auto</nome>
+    <viewState>ANNOUNCE_FINDCAR</viewState>
+    <descrizione />
+    <idPadre />
+    <page>panoramapage.xaml</page>
+    <template />
+    <transform />
+    <posizione />
+    <dataCreazione />
+    <dataUltimaModifica />
+  </dati>
+</xFaster>

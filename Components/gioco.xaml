@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="netretis.gioco"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+   
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="600" d:DesignWidth="450"  Loaded="UserControl_Loaded" >
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="246*" />
+            <ColumnDefinition Width="61" />
+            <ColumnDefinition Width="93*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Height="580" HorizontalAlignment="Left" Name="rectangle1" Stroke="SteelBlue" StrokeThickness="4" VerticalAlignment="Top" Width="450" Grid.ColumnSpan="3" />
+        <Button Content="Continua" Grid.ColumnSpan="3" Height="73" HorizontalAlignment="Left" Margin="240,21,0,0" Name="button1" VerticalAlignment="Top" Width="160" Background="Red" Visibility="Collapsed" Click="button1_Click" />
+        <Rectangle Height="51" HorizontalAlignment="Left" Margin="81,112,0,0" Name="rectangle2" Stroke="SteelBlue" StrokeThickness="4" VerticalAlignment="Top" Width="262" Grid.ColumnSpan="3" />
+        <TextBlock Name="parola1dx" Text="parola1" Foreground="Black" Margin="0,112,57,437" FontSize="32" HorizontalAlignment="Right" Width="122" Grid.ColumnSpan="3" />
+        <Rectangle Height="54" HorizontalAlignment="Left" Margin="81,231,0,0" Name="rectangle4" Stroke="SteelBlue" StrokeThickness="4" VerticalAlignment="Top" Width="262" Grid.ColumnSpan="3" />
+
+        <TextBlock Name="parola1" Text="parola1" Foreground="Black" Margin="114,112,78,437" FontSize="32" Grid.ColumnSpan="3" FontWeight="Bold" />
+        <TextBlock Name="parola2" Text="parola2" Foreground="Black" Margin="113,172,0,371" FontSize="32" HorizontalAlignment="Left" Width="209" Grid.ColumnSpan="3" FontWeight="Bold" />
+        <TextBlock Name="parola3" Text="parola3" Foreground="Black" Margin="114,229,78,317" FontSize="32" Grid.ColumnSpan="3" FontWeight="Bold" />
+        
+        <TextBlock Name="parola1sx" Text="parola1" Foreground="Black" Margin="114,112,83,437" FontSize="32" Visibility="Collapsed" />
+        <TextBlock Name="parola2sx" Text="parola2" Foreground="Black" Margin="113,172,0,371" FontSize="32" HorizontalAlignment="Left" Width="49" Visibility="Collapsed"/>
+        <TextBlock Name="parola3sx" Text="parola3" Foreground="Black" Margin="114,229,83,317" FontSize="32" Visibility="Collapsed"/>
+        <TextBlock Name="parola2dx" Text="parola2" Foreground="Black" Margin="221,172,34,371" FontSize="32" Visibility="Collapsed" Grid.ColumnSpan="2" />
+        <TextBlock Name="parola3dx" Text="parola3" Foreground="Black" Margin="221,229,34,317" FontSize="32" Visibility="Collapsed" Grid.ColumnSpan="2" />
+        <TextBox Name="txtindovina" Text="" TextChanged="txtindovina_TextChanged" BorderBrush="SteelBlue" Margin="69,331,0,189" BorderThickness="5" HorizontalAlignment="Left" Width="238" FontSize="32" Grid.ColumnSpan="2" />
+        <TextBox Height="72" Name="soluzione" Text="soluzione" Visibility="Collapsed" Margin="47,356,36,172" Grid.ColumnSpan="2" Grid.Column="1" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="99,398,0,0" Name="txtnumlettere" Text="Parola di 3 lettere" VerticalAlignment="Top" Foreground="Black" Width="188" FontWeight="Bold" Grid.ColumnSpan="2" />
+        <TextBlock   FontSize="32" Foreground="Black" Margin="161,112,23,0" Name="txttrattini1" Text="_ _ _" Height="51" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <TextBlock   FontSize="32" Foreground="Black" Margin="161,172,13,0" Name="txttrattini2" Text="_ _ _" Height="51" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <TextBlock FontSize="32" Foreground="Black" Margin="161,229,13,320" Name="txttrattini3" Text="_ _ _" Visibility="Collapsed"/>
+        <TextBlock Height="82" HorizontalAlignment="Left" Margin="160,-13,0,0" Name="txtnumparola" Text="1" VerticalAlignment="Top" Width="97"  Foreground="SteelBlue" FontSize="72" Grid.ColumnSpan="2" />
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="81,309,0,0"  Text="  Indovina la parola" VerticalAlignment="Top" Foreground="Crimson" Width="226" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2" />
+        <TextBlock Height="48" Margin="12,25,86,0" Name="textBlock1" Text="Livello n. " VerticalAlignment="Top" Foreground="SteelBlue" FontSize="36" FontWeight="Bold" />
+        <Rectangle Height="51" HorizontalAlignment="Left" Margin="81,172,0,0" Name="rectangle3" Stroke="SteelBlue" StrokeThickness="4" VerticalAlignment="Top" Width="262" Grid.ColumnSpan="3" />
+        <Button Background="SteelBlue" Content="Confermi?" Height="73" HorizontalAlignment="Left" Margin="81,426,0,0" Name="button2" VerticalAlignment="Top" Visibility="Visible" Width="194" Grid.ColumnSpan="2" Click="button2_Click" />
+        <TextBlock Height="42" HorizontalAlignment="Left" Margin="12,525,0,0" Name="punteggio" Text="Punteggio:" VerticalAlignment="Top" Width="181" Foreground="Black" FontSize="28"/>
+        <Button Background="SteelBlue" Content="Aiuto?" Height="67" HorizontalAlignment="Left" Margin="31,513,0,0" Name="aiuto" VerticalAlignment="Top" Visibility="Visible" Width="123" Grid.ColumnSpan="2" Grid.Column="1" FontSize="20" Click="aiuto_Click" />
+    </Grid>
+</UserControl>

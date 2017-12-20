@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<xFaster xmlns="http://www.xfaster.com/schema/xf/om/webpart/xf.om.webpart.list.viewstate.xsd">
+  <parametri>
+    <num_pagina>1</num_pagina>
+    <num_elementi>100</num_elementi>
+    <totale_pagine>1</totale_pagine>
+  </parametri>
+  <dati>
+    <parola1_SX>VE</parola1_SX>
+    <parola1_DX></parola1_DX>
+    <parola2_SX>F</parola2_SX>
+    <parola2_DX>RE</parola2_DX>
+    <parola3_SX></parola3_SX>
+    <parola3_DX>RA</parola3_DX>
+    <soluzione>LETTE</soluzione>
+  </dati>
+</xFaster>
+
